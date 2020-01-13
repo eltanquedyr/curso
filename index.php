@@ -34,11 +34,55 @@
 	<= menor e igual
 	>= mayor e igual
 	
+	Operadores logicos
 	
+	&& and
+	|| or
+	! no
 	
 	
 	
 	*/
+		$num=0;
+	goto marca;
+	switch($condicion){
+		case 1:
+			echo 'Lunes;';
+			break;
+		case 2:
+			echo 'Martes';
+			break;
+		case 3:
+			echo 'Miercoles';
+			break;
+		case 4:
+			echo 'Jueves';
+			break;
+		case 5:
+			echo 'Viernes';
+			break;
+		default:
+			echo 'Fin de semana';
+			break;
+	}
+
+	antes:
+			echo 'Lunes;';
+			echo 'Martes';
+			echo 'Miercoles';
+			echo 'Jueves';
+			echo 'Viernes';
+			echo 'Fin de semana';
+	
+	while($num<=5){
+		echo 'se ejecuta si la condición es verdadera';
+		$num++;
+	}
+	//goto
+	exit;
+	marca:
+	echo 'Estoy acá';
+	goto antes;
 	?>
 </body>
 </html>
