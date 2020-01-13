@@ -9,6 +9,7 @@
 	<h1>Gustavo del Pozo</h1>
 	<?php
 	//Titulo
+	echo '<h1>Rama de Rama</h1>';
 	echo '<h3>Es mejor usar comillas simples que dobles porque usan menos recurso</h3>';
 	$para_mostrar="solo cambia las comillas dobles por comillas simples";
 	echo "Estoy usando comillas dobles y si $para_mostrar";
@@ -47,6 +48,33 @@
 	echo gettype($nulo);
 	//las variables no puede ser un numero despues del $ y no podemos usar el - ni ñ ni /  & ni ningun caracter raro ni ascento
 	var_dump($texto); //muestra toda la info de la variable
+	
+	//Constantes
+	//es un contenedor como una variable pero que no se puede cambiar el contenido
+	define('nombre','Gustavo del Pozo');
+	echo nombre . '<br/>';
+	//nomb="nuevo"; no se puede
+	
+	echo 'existen constantes predefinidas<br/>';
+	echo PHP_OS . '<br/>';
+	echo PHP_VERSION. '<br/>';
+	echo __TRAIT__;
+	
+	
+	//operadores +-*/%(Resto<)
+	//operadores de incremento ($variable ++;) o decremento ($variale--;) Preincremento ++$variable predecremento --$variable
+	//Variables super globales
+	//variables de servidor 
+	echo($_SERVER['SERVER_NAME']. '<br>');
+	echo $_SERVER['DOCUMENT_ROOT']. '<br>';
+	echo $_SERVER['HTTP_ACCEPT_LANGUAGE']. '<br>';
+	echo $_SERVER['HTTP_USER_AGENT'];
+	echo $_SERVER['REMOTE_ADDR']. '<br>';
+	
+	
+	
+	
+	
 	?>
 </body>
 </html>
